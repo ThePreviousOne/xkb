@@ -1,0 +1,217 @@
+// Symbols for Japanese 106-keys keyboards (by tsuka@kawalab.dnj.ynu.ac.jp).
+default  partial alphanumeric_keys
+xkb_symbols "DVORAK109A" {
+
+    name[Group1] = "Dvorak (OADG 109A)";
+
+    key <SCLK> {
+  type[Group1]="PC_HYPER_LEVEL2",
+  symbols[Group1]= [ ISO_Next_Group, ISO_Prev_Group ],
+  type[Group2]="ONE_LEVEL",
+  symbols[Group2]= [ ISO_Prev_Group ],
+  type[Group3]="ONE_LEVEL",
+  symbols[Group3]= [ ISO_Next_Group ]
+    };
+
+    key <AE01> { [ 1, exclam		] };
+    key <AE02> { [ 2, quotedbl		] };
+    key <AE03> { [ 3, numbersign	] };
+    key <AE04> { [ 4, dollar		] };
+    key <AE05> { [ 5, percent		] };
+    key <AE06> { [ 6, ampersand		] };
+    key <AE07> { [ 7, apostrophe	] };
+    key <AE08> { [ 8, parenleft		] };
+    key <AE09> { [ 9, parenright	] };
+    key <AE10> { [ 0, 0		] };
+    key <AE11> { [ at, grave		] };
+    key <AE12> { [ asciicircum,	asciitilde] };
+    key <AE13> { [ yen, bar	] };
+
+    key <AD01> { [ colon, asterisk	] };
+    key <AD02> { [ comma, less		] };
+    key <AD03> { [ period, greater	] };
+    key <AD04> { [ p, P			] };
+    key <AD05> { [ y, Y			] };
+    key <AD06> { [ f, F			] };
+    key <AD07> { [ g, G			] };
+    key <AD08> { [ c, C			] };
+    key <AD09> { [ r, R			] };
+    key <AD10> { [ l, L			] };
+    key <AD11> { [ slash, question	] };
+    key <AD12> { [ bracketleft,	braceleft ] };
+
+    key <AC01> { [ a, A			] };
+    key <AC02> { [ o, O			] };
+    key <AC03> { [ e, E			] };
+    key <AC04> { [ u, U			] };
+    key <AC05> { [ i, I			] };
+    key <AC06> { [ d, D			] };
+    key <AC07> { [ h, H			] };
+    key <AC08> { [ t, T			] };
+    key <AC09> { [ n, N			] };
+    key <AC10> { [ s, S			] };
+    key <AC11> { [ minus, equal		] };
+    key <AC12> { [ bracketright, braceright ] };
+
+    key <AB01> { [ semicolon, plus	] };
+    key <AB02> { [ q, Q			] };
+    key <AB03> { [ j, J			] };
+    key <AB04> { [ k, K			] };
+    key <AB05> { [ x, X			] };
+    key <AB06> { [ b, B			] };
+    key <AB07> { [ m, M			] };
+    key <AB08> { [ w, W			] };
+    key <AB09> { [ v, V			] };
+    key <AB10> { [ z, Z			] };
+    key <AB11> { [ backslash, underscore] };
+
+    key <MENU> { [ Alt_R ] };
+    key <RALT> { [ Hyper_R ] };
+
+    key <PRSC> {
+    type[Group1]= "PC_ALT_LEVEL2",
+    symbols[Group1]= [ Print, Execute ]
+    };
+
+    name[Group2] = "Dvorak (Kana)";
+
+    key <TLDE> {
+  type[Group1]="ONE_LEVEL",
+  symbols[Group1]= [ Escape ],
+	type[Group2]="PC_ALT_LEVEL2",
+	symbols[Group2]= [ Zenkaku_Hankaku, Kanji ]
+    };
+
+    key <MUHE> {
+  type[Group1]="ONE_LEVEL",
+  symbols[Group1]= [ Return ],
+	type[Group2]="ONE_LEVEL",
+	symbols[Group2]= [ Muhenkan ],
+  type[Group3]="ONE_LEVEL",
+  symbols[Group3]= [ Return ]
+    };
+
+    key <HENK> {
+  type[Group1]="ONE_LEVEL",
+  symbols[Group1]= [ Return ],
+	type[Group2]="PC_ALT_LEVEL2",
+  symbols[Group2]= [ Henkan, Mode_switch ],
+  type[Group3]="ONE_LEVEL",
+  symbols[Group3]= [ Return ]
+    };
+
+    key <HKTG> {
+  type[Group1]="ONE_LEVEL",
+  symbols[Group1]= [ Delete ],
+	type[Group2]="PC_ALT_LEVEL2",
+	symbols[Group2]= [ Hiragana_Katakana, Romaji ],
+  type[Group3]="ONE_LEVEL",
+  symbols[Group3]= [ Delete ]
+    };
+
+    key <AE01> { symbols[Group2] = [ kana_NU		]	};
+    key <AE02> { symbols[Group2] = [ kana_FU		]	};
+    key <AE03> { symbols[Group2] = [ kana_A, kana_a	]	};
+    key <AE04> { symbols[Group2] = [ kana_U, kana_u	]	};
+    key <AE05> { symbols[Group2] = [ kana_E, kana_e	]	};
+    key <AE06> { symbols[Group2] = [ kana_O, kana_o	]	};
+    key <AE07> { symbols[Group2] = [ kana_YA, kana_ya	]	};
+    key <AE08> { symbols[Group2] = [ kana_YU, kana_yu	]	};
+    key <AE09> { symbols[Group2] = [ kana_YO, kana_yo	]	};
+    key <AE10> { symbols[Group2] = [ kana_WA, kana_WO	]	};
+    key <AE11> { symbols[Group2] = [ kana_HO		]	};
+    key <AE12> { symbols[Group2] = [ kana_HE		]	};
+    key <AE13> { symbols[Group2] = [ prolongedsound	]	};
+
+    key <AD01> { symbols[Group2] = [ kana_TA		]	};
+    key <AD02> { symbols[Group2] = [ kana_TE		]	};
+    key <AD03> { symbols[Group2] = [ kana_I, kana_i	]	};
+    key <AD04> { symbols[Group2] = [ kana_SU		]	};
+    key <AD05> { symbols[Group2] = [ kana_KA		]	};
+    key <AD06> { symbols[Group2] = [ kana_N		]	};
+    key <AD07> { symbols[Group2] = [ kana_NA		]	};
+    key <AD08> { symbols[Group2] = [ kana_NI		]	};
+    key <AD09> { symbols[Group2] = [ kana_RA		]	};
+    key <AD10> { symbols[Group2] = [ kana_SE		]	};
+    key <AD11> { symbols[Group2] = [ voicedsound		]	};
+    key <AD12> { symbols[Group2] = [ semivoicedsound, kana_openingbracket ] };
+
+    key <AC01> { symbols[Group2] = [ kana_CHI		]	};
+    key <AC02> { symbols[Group2] = [ kana_TO		]	};
+    key <AC03> { symbols[Group2] = [ kana_SHI		]	};
+    key <AC04> { symbols[Group2] = [ kana_HA		]	};
+    key <AC05> { symbols[Group2] = [ kana_KI		]	};
+    key <AC06> { symbols[Group2] = [ kana_KU		]	};
+    key <AC07> { symbols[Group2] = [ kana_MA		]	};
+    key <AC08> { symbols[Group2] = [ kana_NO		]	};
+    key <AC09> { symbols[Group2] = [ kana_RI		]	};
+    key <AC10> { symbols[Group2] = [ kana_RE		]	};
+    key <AC11> { symbols[Group2] = [ kana_KE		]	};
+    key <AC12> { symbols[Group2] = [ kana_MU, kana_closingbracket ] };
+
+    key <AB01> { symbols[Group2] = [ kana_TSU, kana_tsu	]	};
+    key <AB02> { symbols[Group2] = [ kana_SA		]	};
+    key <AB03> { symbols[Group2] = [ kana_SO		]	};
+    key <AB04> { symbols[Group2] = [ kana_HI		]	};
+    key <AB05> { symbols[Group2] = [ kana_KO		]	};
+    key <AB06> { symbols[Group2] = [ kana_MI		]	};
+    key <AB07> { symbols[Group2] = [ kana_MO		]	};
+    key <AB08> { symbols[Group2] = [ kana_NE, kana_comma ]	};
+    key <AB09> { symbols[Group2] = [ kana_RU, kana_fullstop ]	};
+    key <AB10> { symbols[Group2] = [ kana_ME, kana_middledot ]	};
+    key <AB11> { symbols[Group2] = [ kana_RO		]	};
+
+    name[Group3] = "Qwerty (OADG)";
+
+    key <AE01> { symbols[Group3] = [ 1, exclam		] };
+    key <AE02> { symbols[Group3] = [ 2, quotedbl		] };
+    key <AE03> { symbols[Group3] = [ 3, numbersign	] };
+    key <AE04> { symbols[Group3] = [ 4, dollar		] };
+    key <AE05> { symbols[Group3] = [ 5, percent		] };
+    key <AE06> { symbols[Group3] = [ 6, ampersand		] };
+    key <AE07> { symbols[Group3] = [ 7, apostrophe	] };
+    key <AE08> { symbols[Group3] = [ 8, parenleft		] };
+    key <AE09> { symbols[Group3] = [ 9, parenright	] };
+    key <AE10> { symbols[Group3] = [ 0		] };
+    key <AE11> { symbols[Group3] = [ minus, equal		] };
+    key <AE12> { symbols[Group3] = [ asciicircum,	asciitilde] };
+    key <AE13> { symbols[Group3] = [ yen, bar	] };
+
+    key <AD01> { symbols[Group3] = [ q, Q			] };
+    key <AD02> { symbols[Group3] = [ w, W			] };
+    key <AD03> { symbols[Group3] = [ e, E			] };
+    key <AD04> { symbols[Group3] = [ r, R			] };
+    key <AD05> { symbols[Group3] = [ t, T			] };
+    key <AD06> { symbols[Group3] = [ y, Y			] };
+    key <AD07> { symbols[Group3] = [ u, U			] };
+    key <AD08> { symbols[Group3] = [ i, I			] };
+    key <AD09> { symbols[Group3] = [ o, O			] };
+    key <AD10> { symbols[Group3] = [ p, P			] };
+    key <AD11> { symbols[Group3] = [ at, grave		] };
+    key <AD12> { symbols[Group3] = [ bracketleft,	braceleft ] };
+
+    key <AC01> { symbols[Group3] = [ a, A			] };
+    key <AC02> { symbols[Group3] = [ s, S			] };
+    key <AC03> { symbols[Group3] = [ d, D			] };
+    key <AC04> { symbols[Group3] = [ f, F			] };
+    key <AC05> { symbols[Group3] = [ g, G			] };
+    key <AC06> { symbols[Group3] = [ h, H			] };
+    key <AC07> { symbols[Group3] = [ j, J			] };
+    key <AC08> { symbols[Group3] = [ k, K			] };
+    key <AC09> { symbols[Group3] = [ l, L			] };
+    key <AC10> { symbols[Group3] = [ semicolon, plus	] };
+    key <AC11> { symbols[Group3] = [ colon, asterisk	] };
+    key <AC12> { symbols[Group3] = [ bracketright, braceright ] };
+
+    key <AB01> { symbols[Group3] = [ z, Z			] };
+    key <AB02> { symbols[Group3] = [ x, X			] };
+    key <AB03> { symbols[Group3] = [ c, C			] };
+    key <AB04> { symbols[Group3] = [ v, V			] };
+    key <AB05> { symbols[Group3] = [ b, B			] };
+    key <AB06> { symbols[Group3] = [ n, N			] };
+    key <AB07> { symbols[Group3] = [ m, M			] };
+    key <AB08> { symbols[Group3] = [ comma,  less		] };
+    key <AB09> { symbols[Group3] = [ period, greater	] };
+    key <AB10> { symbols[Group3] = [ slash, question	] };
+    key <AB11> { symbols[Group3] = [ backslash, underscore] };
+};
