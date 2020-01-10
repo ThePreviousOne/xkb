@@ -104,9 +104,9 @@ xkb_symbols "evdev" {
 // Commented out because HZTG has same keycode as TLDE
 //    key <HZTG>   {      [ Zenkaku_Hankaku       ]       };
 
-    key <HKTG>   {      [ Hiragana_Katakana     ]       };
-    key <HENK>   {      [ Henkan                ]       };
-    key <MUHE>   {      [ Muhenkan              ]       };
+    //key <HKTG>   {      [ Hiragana_Katakana     ]       };
+    //key <HENK>   {      [ Henkan                ]       };
+    //key <MUHE>   {      [ Muhenkan              ]       };
     key <KATA>   {      [ Katakana              ]       };
     key <HIRA>   {      [ Hiragana              ]       };
     key <RO>     {      [ Romaji                ]       };
@@ -1907,4 +1907,3 @@ partial alphanumeric_keys
 xkb_symbols "teck229" {
     include "inet(teck227)"
 };
-

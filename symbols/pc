@@ -36,6 +36,7 @@ xkb_symbols "pc105" {
     modifier_map Lock   { Caps_Lock };
     modifier_map Control{ Control_L, Control_R };
     modifier_map Mod2   { Num_Lock };
+    modifier_map Mod3   { Hyper_L, Hyper_R };
     modifier_map Mod4   { Super_L, Super_R };
 
     // Fake keys for virtual<->real modifiers mapping:
@@ -53,7 +54,7 @@ xkb_symbols "pc105" {
     modifier_map Mod4   { <SUPR> };
 
     key <HYPR> {	[ NoSymbol, Hyper_L	]	};
-    modifier_map Mod4   { <HYPR> };
+    modifier_map Mod3   { <HYPR> };
     // End of modifier mappings.
 
     key <OUTP> { [ XF86Display ] };
