@@ -19,7 +19,7 @@ xkb_symbols "pc105" {
     key  <TAB> {	[ Tab,	ISO_Left_Tab	]	};
     key <RTRN> {	[ Return		]	};
 
-    key <CAPS> {	[ Caps_Lock		]	};
+    key <CAPS> {	[ BackSpace, Delete		]	};
     key <NMLK> {	[ Num_Lock 		]	};
 
     key <LFSH> {	[ Shift_L		]	};
@@ -33,7 +33,6 @@ xkb_symbols "pc105" {
 
     // Beginning of modifier mappings.
     modifier_map Shift  { Shift_L, Shift_R };
-    modifier_map Lock   { Caps_Lock };
     modifier_map Control{ Control_L, Control_R };
     modifier_map Mod2   { Num_Lock };
     modifier_map Mod3   { Hyper_L, Hyper_R };
