@@ -34,7 +34,9 @@ xkb_symbols "DVORAK109A" {
     key <AD05> { [ y, Y			] };
     key <AD06> { [ f, F			] };
     key <AD07> { [ g, G			] };
-    key <AD08> { [ c, C			] };
+    key <AD08> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ c, C, uparrow	] };
     key <AD09> { [ r, R			] };
     key <AD10> { [ l, L			] };
     key <AD11> { [ slash, question	] };
@@ -44,12 +46,24 @@ xkb_symbols "DVORAK109A" {
     key <AC02> { [ o, O			] };
     key <AC03> { [ e, E			] };
     key <AC04> { [ u, U			] };
-    key <AC05> { [ i, I			] };
-    key <AC06> { [ d, D			] };
-    key <AC07> { [ h, H			] };
-    key <AC08> { [ t, T			] };
-    key <AC09> { [ n, N			] };
-    key <AC10> { [ s, S			] };
+    key <AC05> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ i, I, vertbar		] };
+    key <AC06> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ d, D, leftt			] };
+    key <AC07> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ h, H, leftarrow	] };
+    key <AC08> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ t, T, downarrow	] };
+    key <AC09> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ n, N, topt 			] };
+    key <AC10> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ s, S, topt			] };
     key <AC11> { [ minus, equal		] };
     key <AC12> { [ bracketright, braceright ] };
 
@@ -58,11 +72,15 @@ xkb_symbols "DVORAK109A" {
     key <AB03> { [ j, J			] };
     key <AB04> { [ k, K			] };
     key <AB05> { [ x, X			] };
-    key <AB06> { [ b, B			] };
+    key <AB06> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ b, B, rightt		] };
     key <AB07> { [ m, M			] };
     key <AB08> { [ w, W			] };
     key <AB09> { [ v, V			] };
-    key <AB10> { [ z, Z			] };
+    key <AB10> {
+      type[Group1]= "PC_HYPER_SHIFT",
+      symbols[Group1]= [ z, Z, bott			] };
     key <AB11> { [ backslash, underscore] };
 
     key <MENU> { [ Alt_R ] };
@@ -119,34 +137,46 @@ xkb_symbols "DVORAK109A" {
     key <AE08> { symbols[Group2] = [ kana_YU, kana_yu	]	};
     key <AE09> { symbols[Group2] = [ kana_YO, kana_yo	]	};
     key <AE10> { symbols[Group2] = [ kana_WA, kana_WO	]	};
-    key <AE11> { symbols[Group2] = [ kana_HO, U30F1	]	};
-    key <AE12> { symbols[Group2] = [ kana_HE	U30F0	]	};
-    key <AE13> { symbols[Group2] = [ prolongedsound, U3012	]	};
+    key <AE11> { symbols[Group2] = [ kana_HO		]	};
+    key <AE12> { symbols[Group2] = [ kana_HE		]	};
+    key <AE13> { symbols[Group2] = [ prolongedsound	]	};
 
     key <AD01> { symbols[Group2] = [ kana_TA		]	};
     key <AD02> { symbols[Group2] = [ kana_TE		]	};
     key <AD03> { symbols[Group2] = [ kana_I, kana_i	]	};
     key <AD04> { symbols[Group2] = [ kana_SU		]	};
-    key <AD05> { symbols[Group2] = [ kana_KA, U30F5		]	};
+    key <AD05> { symbols[Group2] = [ kana_KA		]	};
     key <AD06> { symbols[Group2] = [ kana_N		]	};
     key <AD07> { symbols[Group2] = [ kana_NA		]	};
     key <AD08> { symbols[Group2] = [ kana_NI		]	};
     key <AD09> { symbols[Group2] = [ kana_RA		]	};
-    key <AD10> { symbols[Group2] = [ kana_SE, U30FD	]	};
-    key <AD11> { symbols[Group2] = [ voicedsound, U30FE	]	};
+    key <AD10> { symbols[Group2] = [ kana_SE		]	};
+    key <AD11> { symbols[Group2] = [ voicedsound		]	};
     key <AD12> { symbols[Group2] = [ semivoicedsound, kana_openingbracket ] };
 
     key <AC01> { symbols[Group2] = [ kana_CHI		]	};
     key <AC02> { symbols[Group2] = [ kana_TO		]	};
     key <AC03> { symbols[Group2] = [ kana_SHI		]	};
-    key <AC04> { symbols[Group2] = [ kana_HA, U30EE	  ]	};
-    key <AC05> { symbols[Group2] = [ kana_KI		]	};
-    key <AC06> { symbols[Group2] = [ kana_KU		]	};
-    key <AC07> { symbols[Group2] = [ kana_MA		]	};
-    key <AC08> { symbols[Group2] = [ kana_NO		]	};
-    key <AC09> { symbols[Group2] = [ kana_RI		]	};
-    key <AC10> { symbols[Group2] = [ kana_RE		]	};
-    key <AC11> { symbols[Group2] = [ kana_KE, U30F6	]	};
+    key <AC04> { symbols[Group2] = [ kana_HA		]	};
+    key <AC05> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_KI, vertbar		]	};
+    key <AC06> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_KU, leftt		]	};
+    key <AC07> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_MA, leftarrow		]	};
+    key <AC08> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_NO, downarrow		]	};
+    key <AC09> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_RI, rightarrow		]	};
+    key <AC10> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_RE, topt		]	};
+    key <AC11> { symbols[Group2] = [ kana_KE		]	};
     key <AC12> { symbols[Group2] = [ kana_MU, kana_closingbracket ] };
 
     key <AB01> { symbols[Group2] = [ kana_TSU, kana_tsu	]	};
@@ -154,11 +184,15 @@ xkb_symbols "DVORAK109A" {
     key <AB03> { symbols[Group2] = [ kana_SO		]	};
     key <AB04> { symbols[Group2] = [ kana_HI		]	};
     key <AB05> { symbols[Group2] = [ kana_KO		]	};
-    key <AB06> { symbols[Group2] = [ kana_MI		]	};
+    key <AB06> {
+      type[Group2]= "PC_HYPER_LEVEL2",
+      symbols[Group2] = [ kana_MI, rightt		]	};
     key <AB07> { symbols[Group2] = [ kana_MO		]	};
     key <AB08> { symbols[Group2] = [ kana_NE, kana_comma ]	};
     key <AB09> { symbols[Group2] = [ kana_RU, kana_fullstop ]	};
-    key <AB10> { symbols[Group2] = [ kana_ME, kana_middledot ]	};
+    key <AB10> {
+      type[Group2]= "PC_HYPER_SHIFT",
+      symbols[Group2] = [ kana_ME, kana_middledot, bott ]	};
     key <AB11> { symbols[Group2] = [ kana_RO		]	};
 
     name[Group3] = "Qwerty (OADG)";
@@ -184,7 +218,9 @@ xkb_symbols "DVORAK109A" {
     key <AD05> { symbols[Group3] = [ t, T			] };
     key <AD06> { symbols[Group3] = [ y, Y			] };
     key <AD07> { symbols[Group3] = [ u, U			] };
-    key <AD08> { symbols[Group3] = [ i, I			] };
+    key <AD08> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ i, I, uparrow			] };
     key <AD09> { symbols[Group3] = [ o, O			] };
     key <AD10> { symbols[Group3] = [ p, P			] };
     key <AD11> { symbols[Group3] = [ at, grave		] };
@@ -195,11 +231,21 @@ xkb_symbols "DVORAK109A" {
     key <AC03> { symbols[Group3] = [ d, D			] };
     key <AC04> { symbols[Group3] = [ f, F			] };
     key <AC05> { symbols[Group3] = [ g, G			] };
-    key <AC06> { symbols[Group3] = [ h, H			] };
-    key <AC07> { symbols[Group3] = [ j, J			] };
-    key <AC08> { symbols[Group3] = [ k, K			] };
-    key <AC09> { symbols[Group3] = [ l, L			] };
-    key <AC10> { symbols[Group3] = [ semicolon, plus	] };
+    key <AC06> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ h, H, leftt			] };
+    key <AC07> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ j, J, leftarrow			] };
+    key <AC08> {
+      type[Group2]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ k, K, downarrow			] };
+    key <AC09> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ l, L, rightarrow			] };
+    key <AC10> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ semicolon, plus, topt	] };
     key <AC11> { symbols[Group3] = [ colon, asterisk	] };
     key <AC12> { symbols[Group3] = [ bracketright, braceright ] };
 
@@ -208,10 +254,14 @@ xkb_symbols "DVORAK109A" {
     key <AB03> { symbols[Group3] = [ c, C			] };
     key <AB04> { symbols[Group3] = [ v, V			] };
     key <AB05> { symbols[Group3] = [ b, B			] };
-    key <AB06> { symbols[Group3] = [ n, N			] };
+    key <AB06> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ n, N, rightt			] };
     key <AB07> { symbols[Group3] = [ m, M			] };
     key <AB08> { symbols[Group3] = [ comma,  less		] };
     key <AB09> { symbols[Group3] = [ period, greater	] };
-    key <AB10> { symbols[Group3] = [ slash, question	] };
+    key <AB10> {
+      type[Group3]= "PC_HYPER_SHIFT",
+      symbols[Group3] = [ slash, question, bott	] };
     key <AB11> { symbols[Group3] = [ backslash, underscore] };
 };

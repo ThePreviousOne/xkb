@@ -1,0 +1,46 @@
+default xkb_compatibility "complete" {
+    include "basic"
+    augment "iso9995"
+    augment "mousekeys"
+    augment "accessx(full)"
+    augment "misc"
+    augment "xfree86"
+    augment "level5"
+    augment "caps(caps_lock)"
+    interpret leftarrow {
+      repeat=True;
+      action = RedirectKey(keycode=<LEFT>, clearmodifiers=Mod3);
+    };
+    interpret rightarrow {
+        repeat= True;
+        action = RedirectKey(keycode=<RGHT>, clearmodifiers=Mod3);
+    };
+    interpret uparrow {
+        repeat= True;
+        action = RedirectKey(keycode=<UP>, clearmodifiers=Mod3);
+    };
+    interpret downarrow {
+        repeat= True;
+        action = RedirectKey(keycode=<DOWN>, clearmodifiers=Mod3);
+    };
+    interpret topt {
+        repeat= True;
+        action = RedirectKey(keycode=<PGUP>, clearmodifiers=Mod3);
+    };
+    interpret bott {
+        repeat= True;
+        action = RedirectKey(keycode=<PGDN>, clearmodifiers=Mod3);
+    };
+    interpret leftt {
+        repeat= True;
+        action = RedirectKey(keycode=<HOME>, clearmodifiers=Mod3);
+    };
+    interpret rightt {
+        repeat= True;
+        action = RedirectKey(keycode=<END>, clearmodifiers=Mod3);
+    };
+    interpret vertbar {
+        repeat= True;
+        action = RedirectKey(keycode=<INS>, clearmodifiers=Mod3);
+    };
+};
